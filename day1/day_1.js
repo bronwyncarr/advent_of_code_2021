@@ -5,8 +5,7 @@ const path = require("path");
 const pathToFile = path.join(__dirname, "input.txt");
 let input = fs.readFileSync(pathToFile, "utf-8");
 
-const formatData = (input) =>
-  input.split("\n").map((item) => parseInt(item, 10));
+const formatData = (input) => input.split("\n").map((item) => parseInt(item));
 let inputArray = formatData(input);
 
 // Part 1
